@@ -1,5 +1,5 @@
 function driversWithRevenueOver(drivers, revenue) {
-  return drivers.map((driver) => {return driver.revenue > revenue})
+  return drivers.map((driver) => {return driver.revenue > revenue.parseInt()})
 }
 
 function driverNamesWithRevenueOver(drivers) {
