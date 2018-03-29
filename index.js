@@ -17,7 +17,6 @@ function exactMatch(drivers, obj) {
 
 function exactMatchToList(drivers, obj) {
   return exactMatch(drivers, obj).map((driver) => {
-    const key = Object.keys(obj)[0]
-    return driver[key]
+    return driver.name
   })
 }
